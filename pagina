@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversiones Elsy es, C.A. - Productos de calidad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 139, 0.2);
+        }
+        
+        .section-divider {
+            position: relative;
+            height: 60px;
+            background: linear-gradient(to right, #1e3a8a, #3b82f6);
+        }
+        
+        .section-divider::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 5px;
+            background: linear-gradient(to right, white, #3b82f6, white);
+        }
+    </style>
+</head>
+<body class="font-sans bg-blue-50">
+    <!-- Encabezado -->
+    <header class="bg-blue-800 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-store-alt text-3xl mr-3 text-blue-200"></i>
+                    <h1 class="text-2xl md:text-3xl font-bold">INVERSIONES ELSY ES, C.A.</h1>
+                </div>
+                <nav class="flex flex-wrap justify-center gap-4 md:gap-8">
+                    <a href="#productos" class="hover:text-blue-200 transition-colors font-medium">Productos</a>
+                    <a href="#ofertas" class="hover:text-blue-200 transition-colors font-medium">Ofertas</a>
+                    <a href="#contacto" class="hover:text-blue-200 transition-colors font-medium">Contacto</a>
+                    <a href="#ubicacion" class="hover:text-blue-200 transition-colors font-medium">Ubicación</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-700 to-blue-900 text-white py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Productos de calidad para tu hogar</h2>
+                <p class="text-xl mb-6 text-blue-100">Distribuidores de alimentos básicos, bebidas y artículos de primera necesidad con los mejores precios del mercado.</p>
+                <a href="#productos" class="bg-white text-blue-800 px-6 py-3 rounded-lg font-bold hover:bg-blue-100 transition-colors inline-block">Ver productos</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center fade-in">
+                <img src="https://images.unsplash.com/photo-1550581190-9c1c47615ac4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Alimentos y productos variados" class="rounded-xl shadow-2xl max-w-md w-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section id="productos" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800">Nuestros Productos</h2>
+            
+            <!-- Alimentos Básicos -->
+            <div class="mb-20 fade-in">
+                <h3 class="text-2xl font-semibold mb-6 px-4 py-2 bg-blue-100 text-blue-800 rounded-lg inline-block">Alimentos Básicos</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Producto 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover border border-blue-100">
+                        <img src="https://images.unsplash.com/photo-1602323781141-3560950cc990?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="Harina PAN" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2 text-blue-800">Harina PAN</h4>
+                            <p class="text-gray-600">Harina de maíz precocida para arepas</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover border border-blue-100">
+                        <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="Arroz Primor" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2 text-blue-800">Arroz Primor</h4>
+                            <p class="text-gray-600">Arroz blanco de primera calidad</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 3 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover border border-blue-100">
+                        <img src="https://images.unsplash.com/photo-1550583720-b3142c23598d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="Margarina Mavesa" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2 text-blue-800">Margarina Mavesa</h4>
+                            <p class="text-gray-600">Margarina para cocinar y untar</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 4 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover border border-blue-100">
+                        <img src="https://images.unsplash.com/photo-1610106104746-75216a8c288b?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="Aceite Vatel" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2 text-blue-800">Aceite Vatel</h4>
+                            <p class="text-gray-600">Aceite vegetal para cocinar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bebidas -->
+            <div class="mb-20 fade-in">
+                <h3 class="text-2xl font-semibold mb-6 px-4 py-2 bg-blue-100 text-blue-800 rounded-lg inline-block">Bebidas</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Producto 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover border border-blue-100">
+                        <img src="https://images.unsplash.com/photo-1554866585-cd94860890b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="Pepsi" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2 text-blue-800">Pepsi</h4>
+                            <p class="text-gray-600">Refresco gaseoso en diferentes presentaciones</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover border border-blue-100">
+                        <img src="https://images.unsplash.com/photo-1566489564594-f2163930c034?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="Jugos" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2 text-blue-800">Jugos Naturales</h4>
+                            <p class="text-gray-600">Variedad de sabores naturales</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 3 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover border border-blue-100">
+                        <img src="https://images.unsplash.com/photo-1459666644539-a9755287d6b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="Agua Mineral" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2 text-blue-800">Agua Mineral</h4>
+                            <p class="text-gray-600">Agua purificada en diferentes tamaños</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Otros Productos -->
+            <div class="fade-in">
+                <h3 class="text-2xl font-semibold mb-6 px-4 py-2 bg-blue-100 text-blue-800 rounded-lg inline-block">Otros Productos</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Producto 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover border border-blue-100">
+                        <img src="https://images.unsplash.com/photo-1609188076864-c35269136b06?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="Pan" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2 text-blue-800">Pan y Galletas</h4>
+                            <p class="text-gray-600">Variedad de panes y galletas</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover border border-blue-100">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="Helados EFE" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2 text-blue-800">Helados EFE</h4>
+                            <p class="text-gray-600">Helados de crema en diferentes sabores</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 3 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover border border-blue-100">
+                        <img src="https://images.unsplash.com/photo-1518496979488-34313a303f52?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="Queso y Jamón" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2 text-blue-800">Queso y Jamón</h4>
+                            <p class="text-gray-600">Productos lácteos de primera calidad</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Producto 4 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover border border-blue-100">
+                        <img src="https://images.unsplash.com/photo-1585059895521-7a2a851b3960?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="Papel Higiénico" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg mb-2 text-blue-800">Papel Higiénico</h4>
+                            <p class="text-gray-600">Papel higiénico en diferentes presentaciones</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divisor Sección -->
+    <div class="section-divider"></div>
+
+    <!-- Publicidad Especial -->
+    <section id="ofertas" class="py-16 bg-blue-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">¡Ofertas Especiales de Fin de Semana!</h2>
+                <p class="text-xl text-blue-100">Disfruta de nuestros productos exclusivos los sábados y domingos.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Oferta 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg fade-in card-hover">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="Tequeños" class="w-full h-48 object-cover">
+                    <div class="p-6 text-blue-800">
+                        <h3 class="font-bold text-2xl mb-2">Tequeños</h3>
+                        <p class="mb-4">Deliciosos tequeños de queso recién hechos</p>
+                        <div class="flex items-center text-yellow-500 mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="font-bold text-lg">Solo fines de semana</p>
+                    </div>
+                </div>
+                
+                <!-- Oferta 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg fade-in card-hover">
+                    <img src="https://images.unsplash.com/photo-1600713187861-02681b5afd9b?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="Empanadas" class="w-full h-48 object-cover">
+                    <div class="p-6 text-blue-800">
+                        <h3 class="font-bold text-2xl mb-2">Empanadas</h3>
+                        <p class="mb-4">Empanadas rellenas de carne, pollo o queso</p>
+                        <div class="flex items-center text-yellow-500 mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="font-bold text-lg">Fines de semana</p>
+                    </div>
+                </div>
+                
+                <!-- Oferta 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg fade-in card-hover">
+                    <img src="https://images.unsplash.com/photo-1552590634-af96eca8e6c9?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="Mandocas" class="w-full h-48 object-cover">
+                    <div class="p-6 text-blue-800">
+                        <h3 class="font-bold text-2xl mb-2">Mandocas</h3>
+                        <p class="mb-4">Tradicionales mandocas venezolanas</p>
+                        <div class="flex items-center text-yellow-500 mb-3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="font-bold text-lg">Exclusivo domingos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto y Ubicación -->
+    <section id="contacto" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-blue-800">Contacto y Ubicación</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Información de Contacto -->
+                <div class="bg-blue-50 p-8 rounded-xl shadow-md fade-in">
+                    <h3 class="text-2xl font-semibold mb-6 text-blue-800">Información de Contacto</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-blue-600 text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg text-blue-800">Dirección</h4>
+                                <p class="text-gray-700">Av. Principal, Edificio Elsy, Local 1, Ciudad</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt text-blue-600 text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg text-blue-800">Teléfono</h4>
+                                <p class="text-gray-700">+58 123-4567890</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-blue-600 text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg text-blue-800">Email</h4>
+                                <p class="text-gray-700">info@inversioneselsy.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-clock text-blue-600 text-xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg text-blue-800">Horario de atención</h4>
+                                <p class="text-gray-700">Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+                                <p class="text-gray-700">Sábados: 8:00 AM - 4:00 PM</p>
+                                <p class="text-gray-700">Domingos: 9:00 AM - 2:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mapa de Ubicación -->
+                <div id="ubicacion" class="fade-in">
+                    <h3 class="text-2xl font-semibold mb-6 text-blue-800">Ubicación</h3>
+                    <div class="bg-gray-200 rounded-xl overflow-hidden shadow-md" style="height: 400px;">
+                        <!-- Mapa de Google embebido - reemplazar con código real si es necesario -->
+                        <div class="w-full h-full flex items-center justify-center bg-blue-100">
+                            <div class="text-center p-8">
+                                <i class="fas fa-map-marked-alt text-5xl text-blue-600 mb-4"></i>
+                                <h4 class="font-bold text-xl text-blue-800">Ubicación de Inversiones Elsy es, C.A.</h4>
+                                <p class="mt-2 text-gray-700">Av. Principal, Edificio Elsy, Local 1</p>
+                                <p class="text-gray-700">Ciudad, Estado, Venezuela</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold flex items-center">
+                        <i class="fas fa-store-alt mr-2"></i>
+                        INVERSIONES ELSY ES, C.A.
+                    </h3>
+                    <p class="text-blue-200 mt-2">Productos de calidad para tu hogar</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#" class="text-2xl hover:text-blue-300 transition-colors">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-2xl hover:text-blue-300 transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-2xl hover:text-blue-300 transition-colors">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-700 mt-6 pt-6 text-sm text-blue-300 text-center">
+                <p>© 2023 Inversiones Elsy es, C.A. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de WhatsApp flotante -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="#" class="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors block">
+            <i class="fab fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <script>
+        // Efecto de scroll suave para los enlaces
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Animación de aparición al hacer scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeInObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        fadeElements.forEach(element => {
+            element.style.opacity = 0;
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            fadeInObserver.observe(element);
+        });
+    </script>
+</body>
+</html>
